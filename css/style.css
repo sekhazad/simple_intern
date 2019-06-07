@@ -1,0 +1,224 @@
+ /*top nav*/                       
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.topnav logo {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+   .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+
+
+/*Navbar*/
+.navbar{
+
+    margin-bottom: 1px;
+}                       /*Image slider*/
+
+.container-fluid{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.hum{
+	width:100%;
+	height:200px;
+}
+/*footer*/
+
+.row{
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.col-xs-12{
+    /*line-height: 50px;*/
+	padding-left:30px;
+	padding-right:30px;
+}
+#footer{
+	margin-top:2px;
+    color: black;
+    width: 100%;
+    background-color: #0CFF96;
+}
+.footer-bottom{
+    display:block;
+}
+.copyright{
+    float: left;
+}
+#footer .copypara{
+    margin-top: 10px;
+    margin-bottom: 10px;
+} 
+.footer-bottom .social-links{
+    float: right;
+}
+.social-links li{
+    display: inline-block;
+}
+.fab{
+	margin:10px;
+}
+ /****************contact page CSS******************/
+#map{
+height:500px;
+width:100%;
+}
+.main-content{
+    margin-top: 15px;
+}
+.list-contacts{
+    margin-top:50px;
+    border-bottom:1px solid #eee;
+}
+.list-unstyled{
+    padding:0;
+    list-style:none;
+}
+ul{
+    margin-top:0;
+    margin-bottom:6px;
+}
+.list-contacts_item{
+    padding-top:23px;
+    padding-bottom: 19px;
+    padding-left: 13px;
+    border-top:1px solid #eee;
+}
+.list-contacts_item .fas{
+    float:left;
+    font-size: 16px;
+    color:chocolate;
+    
+}
+.list-contacts_inner {
+    margin-left: 35px;
+}
+.list-contacts_title {
+    font-family: Montserrat , arial;
+    font-size: 12px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+}
+.list-contacts_info {
+    font-size: 14px;
+    color: #777; }
+
+      /**contact form*/
+.form {font-family: Arial, Helvetica, sans-serif;}
+
+.form input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.form input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.form input[type=submit]:hover {
+    background-color: #45a049
+    
+}
+
+.form .container {
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+       /*************About us page css***********/
+#about-main_contain{
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.about_image{
+   width: 350px;
+    height:200px;
+    float:left;
+    margin-right: 10px;
+}
+.para_aboimg{
+     text-align: justify;
+    text-justify: inter-word;
+}
+.fac_dt{
+    text-align: center;
+    font-weight: 500;
+    font-family: cursive;
+    font-size: 50px;
+}
+

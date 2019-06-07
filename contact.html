@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learn Programing</title>
+    <link href="images/favicon.png" type="image/png" rel="shortcut icon">
+    <meta charset="UTF  -8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    <!------------------Top navbar----------------->
+    <div class="topnav">
+        <div class="col-md-12">
+            <img class="logo" src="images/icon.png" alt="logo">
+            <div class="search-container">
+                <form action="#">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--Collapse navbar -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-------------------detail contact info------------------->
+    <!--google map-->
+    <div class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="section-map">
+                        <div id="map"></div>
+                        <script>
+                            function initMap() {
+                                var location = {
+                                    lat: 19.224857,
+                                    lng: 73.154137
+                                };
+                                var map = new google.maps.Map(document.getElementById("map"), {
+                                    zoom: 4,
+                                    center: location
+                                });
+                                var marker = new google.maps.Marker({
+                                    position: location,
+                                    map: map
+                                });
+                            }
+
+                        </script>
+                        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ&callback=initMap" type="text/javascript"></script>
+                    </div>
+                </div>
+                <!--contact detail-->
+                <div class="col-md-5">
+                    <div class="section-info">
+                        <ul class="list-contacts list-unstyled">
+                            <li class="list-contacts_item">
+                                <i class="fas fa-home"></i>
+                                <div class="list-contacts_inner">
+                                    <div class="list-contacts_title">Address</div>
+                                    <div class="list-contacts_info">Sai Rachana Apt. Nr Twinkle apt.., Shankar pawse Road, Kailash nagar, kalyan(E)</div>
+                                </div>
+                            </li>
+                            <li class="list-contacts_item">
+                                <i class="fas fa-phone"></i>
+                                <div class="list-contacts_inner">
+                                    <div class="list-contacts_title">Contact</div>
+                                    <div class="list-contacts_info">44478925328</div>
+                                </div>
+                            </li>
+                            <li class="list-contacts_item">
+                                <i class="fas fa-envelope"></i>
+                                <div class="list-contacts_inner">
+                                    <div class="list-contacts_title">EMAIL</div>
+                                    <div class="list-contacts_info">info@learnprograming.co.in</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------contact form------------>
+    <div class="form">
+        <div class="container">
+            <div class="col-xs-12">
+                <form action="#" method="post">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    
+                    
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+      <option value="india">India</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!----------------footer--------------->
+    <div id="footer">
+        <div class="container">
+            <div class="col-xs-12">
+                <div class="row">
+                    <div class="footer-bottom">
+                        <div class="copyright">
+                            <p class="copypara">&copyCopyright 2018 |Design by:Sekh Abul</p>
+                        </div>
+                        <ul class="social-links list-unstyle">
+                            <a href="#"><li><i class="fab fa-facebook-f"></i></li></a>
+                            <a href="#"><li><i class="fab fa-twitter"></i></li></a>
+                            <a href="#"><li><i class="fab fa-instagram"></i></li></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
